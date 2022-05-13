@@ -162,7 +162,7 @@ function esPrimo(numero) {
         return false;
     }
 
-    for (var i = 2; i < numero; i++) {
+    for (var i = 2; i <= Math.ceil(numero / 2); i++) {
         if (numero % i === 0) {
             return false;
         }
